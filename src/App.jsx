@@ -5,16 +5,17 @@ import MainContent from "./components/MainContent";
 import ProductSection from "./components/ProductSection";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
-    <div>
+    <ChakraProvider>
       <Header />
       <MainContent />
       <ProductSection />
       <FAQ />
       <Footer />
-    </div>
+    </ChakraProvider>
   );
 }
 
